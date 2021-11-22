@@ -1,0 +1,22 @@
+.form-group select {
+    width: 200px;   
+}
+.form-group, .fields-wrapper {
+    gap: 20px;
+}
+
+.car-item-wrapper {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+.car-item-wrapper .car-title {
+    background-color: #bcbcbc;
+}
+.car-item-wrapper .car-specs {
+    background-color: #666666;
+    width: 100%;
+    margin-top: 20px;
+}
