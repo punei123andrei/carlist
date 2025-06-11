@@ -12,9 +12,9 @@ if( !function_exists( 'add_action' ) ){
 }
 
 // includes
-include('init-car.php');
-include('add-cars.php');
-include('enqueue.php');
+include( plugin_dir_path( __FILE__ ) . 'init-car.php' );
+include( plugin_dir_path( __FILE__ ) . 'add-cars.php' );
+include( plugin_dir_path( __FILE__ ) . 'enqueue.php' );
 
 // actions
 add_action('wp_enqueue_scripts', 'car_enqueue_styles');
