@@ -35,7 +35,7 @@ function display_carlist_func($atts){
         'showfilters' => 0
     ], $atts);
 
-    $content;
+    $content = '';
 
     if($atts['showfilters'] == 1):
             $filter = file_get_contents('templates/filter-template.php', true);    
@@ -116,7 +116,7 @@ function display_carlist_func($atts){
         endwhile;
         $content .= '</div>';
     } else {
-        echo __( 'No cars found' );
+        $content .= __( 'No cars found', 'carlist' );
     }
     wp_reset_postdata();
 
